@@ -1,14 +1,23 @@
 {
   "name": "jarvis-mcp-testplugin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Testplugin für Jarvis P9g1b: MCP-Server echo-server mit Zugangsdaten aus userConfig",
-  "author": {"name": "Ch7os"},
+  "author": {
+    "name": "Ch7os"
+  },
   "userConfig": {
     "test_token": {
       "type": "string",
       "title": "Test-Token",
       "description": "Beliebiger Testwert; der Server gibt nur seine Länge zurück",
       "sensitive": true,
+      "required": true
+    },
+    "region": {
+      "type": "string",
+      "title": "Region",
+      "description": "Testfeld für die Update-Bremse (P9g1b1-Abnahme): neues Pflichtfeld",
+      "sensitive": false,
       "required": true
     }
   }
