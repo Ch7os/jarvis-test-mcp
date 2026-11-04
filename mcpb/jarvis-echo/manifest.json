@@ -1,0 +1,27 @@
+{
+  "manifest_version": "0.3",
+  "name": "jarvis-echo",
+  "display_name": "Jarvis Echo (Test)",
+  "version": "0.1.0",
+  "description": "Testbündel für Jarvis P9g1b: MCP-Server mit Werkzeug token_laenge",
+  "author": {"name": "Ch7os"},
+  "server": {
+    "type": "node",
+    "entry_point": "server/server.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/server/server.js"],
+      "env": {"TEST_TOKEN": "${user_config.test_token}"}
+    }
+  },
+  "user_config": {
+    "test_token": {
+      "type": "string",
+      "title": "Test-Token",
+      "description": "Beliebiger Testwert; der Server gibt nur seine Länge zurück",
+      "sensitive": true,
+      "required": true
+    }
+  },
+  "compatibility": {"platforms": ["linux", "darwin", "win32"], "runtimes": {"node": ">=18"}}
+}

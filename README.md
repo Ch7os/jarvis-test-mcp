@@ -11,3 +11,6 @@ Marktplatz `jarvis-test-mcp` mit dem Plugin `jarvis-mcp-testplugin`:
 - `plugin.json`: `userConfig.test_token` (`sensitive: true`, Pflicht).
 
 Nur Attrappen als Werte verwenden.
+
+Dazu ein mcpb-Bündel `mcpb/jarvis-echo` (manifest 0.3, `server.type` node, `${__dirname}`,
+`user_config.test_token` sensitive); gebaut als Release-Datei `jarvis-echo-0.1.0.mcpb` (Release `mcpb-v0.1.0`).
