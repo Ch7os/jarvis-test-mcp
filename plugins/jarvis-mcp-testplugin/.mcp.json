@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "echo-server": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/server.js"],
+      "env": {"TEST_TOKEN": "${user_config.test_token}"}
+    }
+  }
+}
