@@ -1,8 +1,10 @@
 {
   "name": "jarvis-test-mcp",
   "owner": {"name": "Ch7os"},
-  "description": "Testmarktplatz für Jarvis P9g1b (MCP direkt, Zugangsdaten)",
+  "description": "Testmarktplatz für Jarvis P9g1b/P9g1b2 (MCP direkt, Zugangsdaten, Hooks, mcpb in Plugins)",
   "plugins": [
-    {"name": "jarvis-mcp-testplugin", "source": "./plugins/jarvis-mcp-testplugin", "description": "Testplugin mit stdio-MCP-Server echo-server und userConfig test_token", "version": "0.1.0", "category": "test", "tags": ["jarvis", "test", "mcp"]}
+    {"name": "jarvis-mcp-testplugin", "source": "./plugins/jarvis-mcp-testplugin", "description": "Testplugin mit stdio-MCP-Server echo-server und userConfig test_token", "version": "0.1.0", "category": "test", "tags": ["jarvis", "test", "mcp"]},
+    {"name": "jarvis-hook-testplugin", "source": "./plugins/jarvis-hook-testplugin", "description": "Testplugin mit SessionStart- und PreToolUse-Hook (je ein Marker nach $CLAUDE_PROJECT_DIR)", "version": "0.1.0", "category": "test", "tags": ["jarvis", "test", "hooks"]},
+    {"name": "jarvis-mcpb-testplugin", "source": "./plugins/jarvis-mcpb-testplugin", "description": "Testplugin mit dem mcpb-Bündel jarvis-echo 0.1.0 als MCP-Server", "version": "0.1.0", "category": "test", "tags": ["jarvis", "test", "mcpb"]}
   ]
 }

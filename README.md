@@ -1,8 +1,8 @@
 # jarvis-test-mcp
 
-Testdaten für Jarvis P9g1b, wird nach der Abnahme archiviert.
+Testdaten für Jarvis P9g1b und P9g1b2, wird nach der Abnahme archiviert.
 
-Marktplatz `jarvis-test-mcp` mit dem Plugin `jarvis-mcp-testplugin`:
+Marktplatz `jarvis-test-mcp` mit drei Plugins. `jarvis-mcp-testplugin`:
 
 - `.mcp.json`: stdio-Server `echo-server` (`node ${CLAUDE_PLUGIN_ROOT}/server.js`), Umgebung
   `TEST_TOKEN=${user_config.test_token}`.
@@ -14,3 +14,11 @@ Nur Attrappen als Werte verwenden.
 
 Dazu ein mcpb-Bündel `mcpb/jarvis-echo` (manifest 0.3, `server.type` node, `${__dirname}`,
 `user_config.test_token` sensitive); gebaut als Release-Datei `jarvis-echo-0.1.0.mcpb` (Release `mcpb-v0.1.0`).
+
+P9g1b2 (Hooks, mcpb in Plugins):
+
+- `jarvis-hook-testplugin`: `hooks/hooks.json` mit einem `SessionStart`-Hook und einem `PreToolUse`-Hook (Matcher
+  `Bash`); beide rufen `bin/marker <ereignis>` auf, das nur eine Zeile (Benutzer, Ereignis, Zeit) nach
+  `$CLAUDE_PROJECT_DIR/jarvis-hook-<ereignis>.marker` schreibt und den Werkzeugaufruf immer zulässt.
+- `jarvis-mcpb-testplugin`: `plugin.json` mit `"mcpServers": "./jarvis-echo.mcpb"`; die Datei ist das Bündel
+  `jarvis-echo-0.1.0.mcpb` aus dem Release `mcpb-v0.1.0` (SHA-256 `cb7611ff…55bd6c`).

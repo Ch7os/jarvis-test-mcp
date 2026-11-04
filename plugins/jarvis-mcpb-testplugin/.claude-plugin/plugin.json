@@ -1,0 +1,9 @@
+{
+  "name": "jarvis-mcpb-testplugin",
+  "version": "0.1.0",
+  "description": "Testplugin für Jarvis P9g1b2: MCP-Server als mcpb-Bündel im Plugin (jarvis-echo 0.1.0 aus dem Release mcpb-v0.1.0)",
+  "author": {
+    "name": "Ch7os"
+  },
+  "mcpServers": "./jarvis-echo.mcpb"
+}

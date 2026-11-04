@@ -1,0 +1,8 @@
+#!/bin/sh
+# Testplugin jarvis-hook-testplugin: schreibt nur einen Marker (Benutzer, Ereignis, Zeit) nach $CLAUDE_PROJECT_DIR,
+# liest stdin nur aus und lässt den Werkzeugaufruf immer zu (Exit 0, keine Ausgabe).
+art=${1:-unbekannt}
+cat >/dev/null 2>&1
+ziel=${CLAUDE_PROJECT_DIR:-$PWD}
+printf '%s %s %s\n' "$(id -un)" "$art" "$(date +%s)" >> "$ziel/jarvis-hook-$art.marker" 2>/dev/null
+exit 0
