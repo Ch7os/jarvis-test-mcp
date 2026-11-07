@@ -1,6 +1,6 @@
 {
   "name": "jarvis-hook-testplugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Testplugin für Jarvis P9g1b2: SessionStart- und PreToolUse-Hook, die je nur einen Marker schreiben",
   "author": {
     "name": "Ch7os"
