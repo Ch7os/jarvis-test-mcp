@@ -1,1 +1,1 @@
-{"name": "jarvis-brain-testplugin", "version": "0.1.0", "description": "Testplugin für P9g2 (Brain als Ziel): ein Skill mit allowed-tools und Shell-Einbettung, einer ohne Rechte"}
+{"name": "jarvis-brain-testplugin", "version": "0.2.0", "description": "Testplugin für P9g2 (Brain als Ziel): Skill mit allowed-tools (schreibend im Workspace) und Shell-Einbettung, Skill ohne Rechte, MCP-Server brain.echo"}

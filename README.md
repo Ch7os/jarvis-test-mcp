@@ -22,3 +22,11 @@ P9g1b2 (Hooks, mcpb in Plugins):
   `$CLAUDE_PROJECT_DIR/jarvis-hook-<ereignis>.marker` schreibt und den Werkzeugaufruf immer zulässt.
 - `jarvis-mcpb-testplugin`: `plugin.json` mit `"mcpServers": "./jarvis-echo.mcpb"`; die Datei ist das Bündel
   `jarvis-echo-0.1.0.mcpb` aus dem Release `mcpb-v0.1.0` (SHA-256 `cb7611ff…55bd6c`).
+
+P9g2 (Brain als Ziel), Fassung 0.2.0:
+
+- `jarvis-brain-testplugin`: Skill `mit-rechten` mit `allowed-tools: Bash(date:*), Bash(touch
+  /srv/jarvis/workspace/scratch/brain-test-gedeckt.txt)` (schreibend, im Workspace gedeckt; Befund B1: Lesebefehle
+  belegen nichts) und der Anweisung, danach einen ungedeckten `touch …/brain-test-ungedeckt.txt` zu versuchen;
+  Skill `ohne-rechte`; MCP-Server `brain.echo` (`server.js`, Werkzeuge `zeit`, `laenge`, `marker`, ohne
+  Zugangsdaten) für die Normalisierung `mcp__brain_echo__*`.

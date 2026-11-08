@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "brain.echo": {
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/server.js"
+      ]
+    }
+  }
+}

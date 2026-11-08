@@ -44,8 +44,8 @@
     {
       "name": "jarvis-brain-testplugin",
       "source": "./plugins/jarvis-brain-testplugin",
-      "description": "Testplugin für P9g2: Skill mit allowed-tools und Shell-Einbettung, Skill ohne Rechte",
-      "version": "0.1.0",
+      "description": "Testplugin für P9g2: Skill mit allowed-tools (schreibend im Workspace) und Shell-Einbettung, Skill ohne Rechte, MCP-Server brain.echo",
+      "version": "0.2.0",
       "category": "test",
       "tags": [
         "jarvis",
