@@ -1,7 +1,7 @@
 ---
 name: mit-rechten
 description: Testskill P9g2 mit allowed-tools (date und ein schreibendes touch im Workspace) und Shell-Einbettung; nennt Datum und Marker.
-allowed-tools: Bash(date:*), Bash(touch /srv/jarvis/workspace/scratch/brain-test-gedeckt.txt)
+allowed-tools: Bash(date:*), Bash(touch /srv/jarvis/workspace/scratch/brain-test-gedeckt.txt), Bash(touch /srv/jarvis/workspace/scratch/brain-test-bremse.txt)
 ---
 Aktuelles Datum laut Shell-Einbettung: !`date -u +%Y-%m-%dT%H:%MZ`
 
